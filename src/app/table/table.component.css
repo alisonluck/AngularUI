@@ -1,0 +1,71 @@
+.filter_class{
+  width: 80%;
+  margin:auto;
+  text-align: center;
+  overflow-x: auto;
+}
+.footer{
+  margin: auto;
+}
+.example {
+  width: 80%;
+  overflow-x: auto;
+  margin:auto;
+  min-height:90%;
+  }
+.addDel{
+  width: 80%;
+  margin: auto;
+}
+.popupIcon:hover{
+  cursor:pointer;
+}
+td{
+  min-width:30%;
+  text-align: center;
+  width:30%;
+}
+th{
+  color:lightgray;
+  font-size: 20px;
+  font-family:Arial;
+  min-width:150px;
+  width:30%;
+  background-color:#0069B0;
+}
+tr{
+  border-radius: 10px;
+}
+.dlg_btn{
+  border:1px solid red;
+  border-radius: 5px;
+  
+}
+.dlg_btn:hover{
+  background-color: lightskyblue;
+}
+
+.mat_filter {
+  font-size: 20px;
+}
+
+label{
+  font-size: 20px;
+  color: lightseagreen;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+#sel_th,#sel_td{
+  min-width: 50px;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: black !important;
+}
+
+::ng-deep .mat-checkbox:not(.mat-checkbox-disabled).mat-accent .mat-checkbox-ripple .mat-ripple-element {
+  background-color: black !important;
+}
+mat-checkbox{
+  float: left;
+}

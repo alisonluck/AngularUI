@@ -1,0 +1,19 @@
+<h1 style="font-size:30px;text-align: center;margin-top: 15px">{{data.header}}</h1>
+    <div>
+        <table style="width: 96%;height:400px%;text-align: center;margin: auto;overflow-x: auto" class="table-bordered">
+            <tr *ngFor="let name of data.names">
+                    <th style="font-size: 18px">{{name}}</th>
+                    
+                    <td style="font-size:20px;">
+                        <mat-form-field>
+                            <input matInput [(ngModel)]="data.values[name]" style="font-size: 20px" value="data.values[name]">
+                        </mat-form-field>
+                    </td>
+            </tr>
+        </table>
+    
+    </div>
+    <div style="text-align: center;margin-top: 15px">
+        <button class="dlg_btn" style="border:1px solid lightgray;"  mat-button [mat-dialog-close]="data.values" cdkFocusInitial >Save</button>
+        <button class="dlg_btn" style="border:1px solid lightgray;margin-left: 30px" mat-button (click)="onNoClick()" >Cancel</button>
+    </div>

@@ -1,0 +1,17 @@
+
+
+<form enctype="multipart/form-data" method="post" action="http://localhost:8080/product/CP-PA-V-R-88/table/CPPT207/csv">
+  <div  style="margin-left: 60px;">
+    <div  style="border-radius:5px">
+        <label for="picked" class="custom-file-upload">
+            Upload
+        </label>
+
+      <input type="file" id="picked" #picked 
+        (click)="message=''"
+        (change)="onPicked(picked)">
+      
+    </div>
+    
+  </div>
+</form>
